@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Joseph",
+        "sala": "1-B",
+        "materia": "Artes",
+        "notas": [5,5,5,5]
+    }
+
+    {
+        "nome": "Rodolf",
+        "sala": "8-B",
+        "materia": "Português",
+        "notas": [7,7,7,7]
+    }
+
+    {
+        "nome": "Adolf",
+        "sala": "5-B",
+        "materia": "Matemática",
+        "notas": [0,0,0,0]
+    }
+
+]

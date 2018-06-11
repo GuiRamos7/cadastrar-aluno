@@ -46,14 +46,14 @@ class AlunoController {
     }
     _limpaFormulario() {
 
-        this._inputNome.value = ''
-        this._inputSala.value = ''
-        this._inputMateria.value = ''
-        this._inputNota1.value = ''
-        this._inputNota2.value = ''
-        this._inputNota3.value = ''
-        this._inputNota4.value = ''
-
+        this._inputNome.value = '';
+        this._inputSala.value = '';
+        this._inputMateria.value = '';
+        this._inputNota1.value = '';
+        this._inputNota2.value = '';
+        this._inputNota3.value = '';
+        this._inputNota4.value = '';
+        this._inputNome.focus();
     }
 
 }
