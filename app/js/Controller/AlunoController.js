@@ -11,10 +11,24 @@ class AlunoController {
 
 
 
+        //Criando Lista de alunos
+        this._listaDeAlunos = new ListaDeAlunos()
+        
+        //Criando a view
+        this._alunoView = new AlunoView($(".tabela-alunos"));
+
+
+        this._alunoView.update(this._listaDeAlunos);
+
     }
 
-    adiciona() {
+    adiciona(event) {
         event.preventDefault()
+        this._listaDeAlunos.adicionaAluno(this._criaAluno());
+        debugger;
+        this._alunoView.update(this._listaDeAlunos);
+        this._limpaFormulario();
+
     }
 
     _criaAluno() {
@@ -29,6 +43,17 @@ class AlunoController {
                 this._inputNota4.value
             )
         )
+    }
+    _limpaFormulario() {
+
+        this._inputNome.value = ''
+        this._inputSala.value = ''
+        this._inputMateria.value = ''
+        this._inputNota1.value = ''
+        this._inputNota2.value = ''
+        this._inputNota3.value = ''
+        this._inputNota4.value = ''
+
     }
 
 }

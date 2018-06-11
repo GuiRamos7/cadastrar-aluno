@@ -5,7 +5,7 @@ class Aluno {
         this._materia = materia;
         this._notas = notas;
         this._media = this._media(this._notas);
-        this._situacaoFinal = this._situacaoFinal();
+        this._situacaoFinal =  this._media >= 6 ? 'Aprovado' : "Reprovado"
     }
 
     _media(notas) {
@@ -18,7 +18,23 @@ class Aluno {
         return somaDasNotas / notas.length;
     }
 
-    _situacaoFinal() {
-        return this._media >= 6 ? 'Aprovado' : "Reprovado"
+
+    get nome() {
+        return this._nome;
+    }
+    get sala() {
+        return this._sala;
+    }
+    get materia() {
+        return this._materia;
+    }
+    get notas() {
+        return this._notas;
+    }
+    get media() {
+        return this._media.toFixed(2);
+    }
+    get situacaoFinal() {
+        return this._situacaoFinal;
     }
 }

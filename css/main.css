@@ -24,6 +24,9 @@ h1{
     .notas{
         display: flex;
     }
+    .notas input {
+        width: 100%;
+    }
 
     label{
         margin: 20px 0 0 20px;
@@ -69,8 +72,8 @@ thead td{
 
 }
 
-.td-aluno td{
+.abv td{
     text-align: center;
-    padding: 10px;
-    border: 1px solid #1a1919
+    padding: 9px;
+
 }

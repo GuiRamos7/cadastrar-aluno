@@ -40,59 +40,35 @@
         <div class="notas">
             <label>
                 <legend>Nota 1°bimestre</legend>
-                <input class="nota1-input" type="text" required  placeholder="10">
+                <input class="nota1-input" type="number"  min="0" max="10"  required  placeholder="10">
             </label>
             <label>
                 <legend>Nota 2°bimestre</legend>
-                <input class="nota2-input" type="text" required  placeholder="10">
+                <input class="nota2-input" type="number"  min="0" max="10" required  placeholder="10">
             </label>
             <label>
                 <legend>Nota 3°bimestre</legend>
-                <input class="nota3-input" type="text" required  placeholder="10">
+                <input class="nota3-input" type="number"   min="0" max="10" required  placeholder="10">
             </label>
             <label>
                 <legend>Nota 4°bimestre</legend>
-                <input class="nota4-input" type="text" required  placeholder="10">
+                <input class="nota4-input" type="number"  min="0" max="10"  required  placeholder="10">
             </label>
         </div>
 
 
         <button class="btn-addAluno" type="submit">Adicionar aluno</button>
     </form>
-    <table>
-        <thead>
-            <td>Aluno</td>
-            <td>Numero</td>
-            <td>Materia</td>
-            <td>1°bimestre</td>
-            <td>2°bimestre</td>
-            <td>3°bimestre</td>
-            <td>4°bimestre</td>
-            <td>Média</td>
-            <td>Situação Final</td>
-        </thead>
 
-        <tbody>
-            <tr class="td-aluno">
-                <td>Aluno</td>
-                <td>3°B</td>
-                <td>Matematica</td>
-                <td>3.0</td>
-                <td>3.0</td>
-                <td>3.0</td>
-                <td>3.0</td>
-                <td>3.0</td>
-                <td>REPROVADO</td>
-            </tr>
-        </tbody>
-
-    </table>
+    <div class="tabela-alunos"></div>
 
 
-
+    <script src="app/js/View/AlunoView.js"></script>
     <script src="app/js/Model/AlunoModel.js"></script>
     <script src="app/js/Controller/AlunoController.js"></script>
     <script src="app/js/Helper/NotasHelper.js"></script>
+    <script src="app/js/Model/ListaDeAlunos.js"></script>
+
 
     <script>
         //"""""jQuery"""""
