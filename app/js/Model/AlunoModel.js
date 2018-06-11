@@ -4,11 +4,11 @@ class Aluno {
         this._sala = sala;
         this._materia = materia;
         this._notas = notas;
-        this._media = this.media(this._notas);
-        this._situacaoFinal = this.situacaoFinal();
+        this._media = this._media(this._notas);
+        this._situacaoFinal = this._situacaoFinal();
     }
 
-    media(notas) {
+    _media(notas) {
         let notasParaNumero = notas.map((e) => {
             return parseFloat(e);
         })
@@ -18,7 +18,7 @@ class Aluno {
         return somaDasNotas / notas.length;
     }
 
-    situacaoFinal() {
+    _situacaoFinal() {
         return this._media >= 6 ? 'Aprovado' : "Reprovado"
     }
 }

@@ -15,7 +15,6 @@ class AlunoController {
 
     adiciona() {
         event.preventDefault()
-        console.log(this._criaAluno());
     }
 
     _criaAluno() {
