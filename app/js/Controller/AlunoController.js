@@ -25,7 +25,6 @@ class AlunoController {
     adiciona(event) {
         event.preventDefault()
         this._listaDeAlunos.adicionaAluno(this._criaAluno());
-        debugger;
         this._alunoView.update(this._listaDeAlunos);
         this._limpaFormulario();
 
