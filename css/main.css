@@ -1,3 +1,46 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    /* padding: 50px; */
+}
+
+
 h1{
+    width: 80%;
+    margin: 50px auto;
     font-size: 2em;
 }
+
+.form{
+    width: 50%;
+    margin: 0 4.5em;;
+    display: flex;
+    flex-direction: column;
+}
+    .info-aluno{
+        display: flex;
+
+    }
+
+    .notas{
+        display: flex;
+    }
+
+    label{
+        margin: 20px 0 0 20px;
+        color: #1a1919;
+        font-weight: bold;
+    }
+
+        input{
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid #6b6b6b;
+            padding: .3em;
+            border-radius: 2px;
+            margin: 3.5px 0;
+            font-size: 1em;
+        }
+input:focus{
+    box-shadow: 0 0 3px #1f65fc;
+    border: 1px solid #1f65fc;
+}
+
