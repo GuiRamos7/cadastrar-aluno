@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>Cadastramento de aluno</h1>
-    <form class="form">
+    <form class="form" onsubmit="alunoController.adiciona(event)">
         
         <div class="info-aluno">
             <label>
@@ -32,7 +32,7 @@
             </label>
             <label>
                 <legend>Materia</legend>
-                <input class="sala-input" type="text">
+                <input class="materia-input" type="text">
             </label>
         </div>
 
@@ -56,6 +56,8 @@
             </label>
         </div>
 
+
+        <button class="btn-addAluno" type="submit">Adicionar aluno</button>
     </form>
     <table>
         <thead>
@@ -85,5 +87,23 @@
         </tbody>
 
     </table>
+
+
+
+    <script src="app/js/Model/AlunoModel.js"></script>
+    <script src="app/js/Controller/AlunoController.js"></script>
+    <script src="app/js/Helper/NotasHelper.js"></script>
+
+    <script>
+        //"""""jQuery"""""
+        let $ = (elemento) => {
+            return document.querySelector(elemento);
+        }
+
+
+        let alunoController = new AlunoController()
+
+
+    </script>
 </body>
 </html>
